@@ -1,17 +1,17 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using MvcMovie.Infra.Data;
 using MvcMovie.Domain.Models;
+using MvcMovie.Infra.Data;
 using MvcMovie.Models.ViewModel;
 
 namespace MvcMovie.Controllers
 {
-    public class MoviesController : Controller
+    public class MoviesPagesController : Controller
     {
         private readonly MovieContext _context;
 
-        public MoviesController(MovieContext context)
+        public MoviesPagesController(MovieContext context)
         {
             _context = context;
         }

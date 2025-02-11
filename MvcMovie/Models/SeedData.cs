@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.DependencyInjection;
 
-using MvcMovie.Data;
+using MvcMovie.Infra.Data;
+using MvcMovie.Domain.Models;
 
 namespace MvcMovie.Models
 {
@@ -9,7 +9,7 @@ namespace MvcMovie.Models
     {
         public static void Initialize(IServiceProvider serviceProvider) 
         {
-            using (var context = new MvcMovieContext(serviceProvider.GetRequiredService<DbContextOptions<MvcMovieContext>>())) 
+            using (var context = new MovieContext(serviceProvider.GetRequiredService<DbContextOptions<MovieContext>>())) 
             {
                 if (context.Movie.Any()) {
                     return;

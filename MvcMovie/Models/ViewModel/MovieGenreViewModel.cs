@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc.Rendering;
+using MvcMovie.Domain.Models;
 
 namespace MvcMovie.Models.ViewModel
 {
