@@ -7,7 +7,9 @@ Projeto segue padrão MVC
 
 ```plaintext
 MvcMovie/
-├── MvcMovie/  # Contém a lógica de negócios e serviços
+├── MvcMovie/  # Contém a arquitetura MVC da aplicação
+├── MvcMovie.Infra/  # Contém infraestrutura da camada de dados
+├── MvcMovie.Model/  # Contém a lógica de negócios e modelos dos dados
 
 ```
 
